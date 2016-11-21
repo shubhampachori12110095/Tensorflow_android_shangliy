@@ -9,4 +9,21 @@
     <!-- API 14 theme customizations can go here. -->
   </style>
 
+  <style name="textCode" parent="TextAppearance.AppCompat.Medium">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">15dp</item>
+    <item name="android:textColor">@color/colorWhite</item>
+    <item name="android:layout_marginEnd">5dp</item>
+  </style>
+
+  <style name="imageScroller" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:layout_weight">2</item>
+    <item name="android:background">@color/colorWhite</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginBottom">@dimen/activity_gallery_top_margin</item>
+  </style>
+
 </resources>
