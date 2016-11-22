@@ -26,7 +26,7 @@ public class Social extends Activity implements AsyncResponse {
     ImageView openCamera;
     LinearLayout celebrityLook,onlineFashion,lookbook;
     View cell;
-    SocialAsyncTask fetch = new SocialAsyncTask();
+    //SocialAsyncTask fetch = new SocialAsyncTask();
 
     private int[] images = {R.drawable.d1, R.drawable.d2, R.drawable.d3,
             R.drawable.d4, R.drawable.d5, R.drawable.d6};
@@ -42,14 +42,14 @@ public class Social extends Activity implements AsyncResponse {
         onlineFashion = (LinearLayout)findViewById(R.id.onlineStyle);
         lookbook = (LinearLayout) findViewById(R.id.lookbook);
 
-       /* for(int i=0;i<images.length;i++) {
+        for(int i=0;i<images.length;i++) {
             cell = getLayoutInflater().inflate(R.layout.cell, null);
             final ImageView imageView = (ImageView) cell.findViewById(R.id.image);
             imageView.setImageResource(images[i]);
             celebrityLook.addView(cell);
-        }*/
-        fetch.response = this;
-        fetch.execute("celebrity_sites");
+        }
+        //fetch.response = this;
+        //fetch.execute("celebrity_sites");
 
 
         for(int i=images.length-1;i>=0;i--) {
